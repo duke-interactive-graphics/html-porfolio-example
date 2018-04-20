@@ -2,13 +2,13 @@ let speed = 1;
 let x=0;
 
 function setup(){
-    createCanvas(800, 800);
+    createCanvas(windowWidth, windowHeight);
     background(255)
     noStroke();
 
     for(var i=0; i<100; i++){
         fill(255, 200, 200);
-        ellipse(random(0, 800), random(0, 800), 40, 40);
+        ellipse(random(0, width), random(0, height), 40, 40);
     }
 }
 
